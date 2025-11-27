@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="16dp"
+        android:padding="8dp"
+        android:background="#FFC107"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps: "
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/containerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginBottom="90dp"
+        android:background="#FFC107">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            style="@style/MyButtonStyle"
+            android:text="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            style="@style/MyButtonStyle"
+            android:text="2"
+            android:layout_toRightOf="@id/btn1"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            style="@style/MyButtonStyle"
+            android:text="3"
+            android:layout_toRightOf="@id/btn2"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            style="@style/MyButtonStyle"
+
+            android:text="4"
+            android:layout_toRightOf="@id/btn3"
+             />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            style="@style/MyButtonStyle"
+            android:text="5"
+            android:layout_below="@id/btn1"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            style="@style/MyButtonStyle"
+            android:text="6"
+            android:layout_below="@id/btn2"
+            android:layout_toRightOf="@id/btn5"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            style="@style/MyButtonStyle"
+            android:text="7"
+            android:layout_below="@id/btn3"
+            android:layout_toRightOf="@id/btn6"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            style="@style/MyButtonStyle"
+            android:text="8"
+            android:layout_below="@id/btn4"
+            android:layout_toRightOf="@id/btn7"
+             />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            style="@style/MyButtonStyle"
+            android:text="9"
+            android:layout_below="@id/btn5"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            style="@style/MyButtonStyle"
+            android:text="10"
+            android:layout_below="@id/btn6"
+            android:layout_toRightOf="@id/btn9"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn11"
+            style="@style/MyButtonStyle"
+
+            android:text="11"
+            android:layout_below="@id/btn7"
+            android:layout_toRightOf="@id/btn10"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn12"
+            style="@style/MyButtonStyle"
+
+            android:text="12"
+            android:layout_below="@id/btn8"
+            android:layout_toRightOf="@id/btn11"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn13"
+            style="@style/MyButtonStyle"
+
+            android:text="13"
+            android:layout_below="@id/btn9"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn14"
+            style="@style/MyButtonStyle"
+
+            android:text="14"
+            android:layout_below="@id/btn10"
+            android:layout_toRightOf="@id/btn13"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn15"
+            style="@style/MyButtonStyle"
+
+            android:text="15"
+            android:layout_below="@id/btn11"
+            android:layout_toRightOf="@id/btn14"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn16"
+            style="@style/MyButtonStyle"
+
+            android:text="16"
+            android:layout_below="@id/btn12"
+            android:layout_toRightOf="@id/btn15"
+             />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/loading_part_2_svgrepo_com"
+        />
+
+
+</LinearLayout>
