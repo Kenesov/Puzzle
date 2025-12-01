@@ -124,9 +124,7 @@ public class MainActivity extends AppCompatActivity {
 
             for (int j = 0; j < SIZE; j++) {
                 Button btn = (Button) inflater.inflate(R.layout.item_button_number, row, false);
-
                 LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(buttonSize, buttonSize);
-                params.setMargins(2, 2, 2, 2);
                 btn.setLayoutParams(params);
                 btn.setTextSize(TypedValue.COMPLEX_UNIT_SP, 28 - SIZE * 3);
                 btn.setOnClickListener(this::onClick);
