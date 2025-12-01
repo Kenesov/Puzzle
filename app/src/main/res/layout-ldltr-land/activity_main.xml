@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
     android:background="@drawable/img"
     tools:context=".MainActivity">
@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -22,11 +23,11 @@
             android:text="3x3"
             android:background="#FFC107"
             android:textSize="16dp"
-            android:layout_marginHorizontal="4dp"
+            android:layout_marginVertical="4dp"
             android:textColor="@color/black"
             android:textStyle="bold"
             />
-            <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_4x4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,19 +35,18 @@
             android:background="#FFC107"
             android:textSize="16dp"
             android:textColor="@color/black"
-                android:layout_marginHorizontal="4dp"
+            android:layout_marginVertical="4dp"
 
-                android:textStyle="bold"
+            android:textStyle="bold"
             />
-            <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_5x5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5x5"
             android:background="#FFC107"
-                android:layout_marginHorizontal="4dp"
-
-                android:textSize="16dp"
+            android:layout_marginVertical="4dp"
+            android:textSize="16dp"
             android:textColor="@color/black"
             android:textStyle="bold"
             />
@@ -56,9 +56,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="8dp"
         android:padding="8dp"
+        android:layout_marginHorizontal="20dp"
         android:background="#FFC107"
         >
 
@@ -89,7 +88,6 @@
         android:gravity="center"
         android:padding="6dp"
         android:orientation="vertical"
-        android:layout_marginBottom="90dp"
         android:background="#FFC107">
 
     </LinearLayout>
@@ -98,7 +96,7 @@
         android:id="@+id/btn_restart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="20dp"
         android:src="@drawable/loading_part_2_svgrepo_com"
         />
 
