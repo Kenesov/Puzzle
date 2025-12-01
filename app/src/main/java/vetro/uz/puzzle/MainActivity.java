@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -102,31 +103,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void createButtons() {
         containerBtn.removeAllViews();
-        LayoutInflater inflater = LayoutInflater.from(this);
 
-        int containerWidth = containerBtn.getLayoutParams().width;
-        int containerHeight = containerBtn.getLayoutParams().height;
-        float density = getResources().getDisplayMetrics().density;
 
-        int containerSizePx;
-        if (containerWidth > 0) {
-            containerSizePx = Math.min(containerWidth, containerHeight);
-        } else {
-            containerSizePx = (int) (360 * density);
-        }
-
-        int paddingPx = (int) (12 * density);
-        int availableSize = containerSizePx - paddingPx;
-        int buttonSize = availableSize / SIZE;
 
         for (int i = 0; i < SIZE; i++) {
-            LinearLayout row = (LinearLayout) inflater.inflate(R.layout.item_layout, containerBtn, false);
+            LinearLayout row = (LinearLayout)  LayoutInflater.from(this).inflate(R.layout.item_layout, containerBtn, false);
 
             for (int j = 0; j < SIZE; j++) {
-                Button btn = (Button) inflater.inflate(R.layout.item_button_number, row, false);
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(buttonSize, buttonSize);
-                btn.setLayoutParams(params);
-                btn.setTextSize(TypedValue.COMPLEX_UNIT_SP, 28 - SIZE * 3);
+                AppCompatButton btn = (AppCompatButton) LayoutInflater.from(this).inflate(R.layout.item_button_number, row, false);
                 btn.setOnClickListener(this::onClick);
 
                 CoordinateData coordinate = new CoordinateData(i, j);
